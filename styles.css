@@ -100,8 +100,7 @@ body {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(135deg, rgba(245, 245, 220, 0.9) 0%, rgba(222, 184, 135, 0.9) 100%),
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23f5f5dc" width="1200" height="800"/><circle cx="200" cy="150" r="80" fill="%23deb887" opacity="0.3"/><circle cx="800" cy="300" r="120" fill="%23d2b48c" opacity="0.2"/><circle cx="1000" cy="600" r="100" fill="%23deb887" opacity="0.25"/></svg>');
+    background: linear-gradient(135deg, rgba(21, 13, 8, 0.45) 0%, rgba(21, 13, 8, 0.45) 100%), url('image/nathan-dumlao-2z3MOB3kfJU-unsplash.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -198,16 +197,11 @@ body {
     text-align: center;
 }
 
-.placeholder-image {
+.about-image img {
     width: 100%;
     height: 300px;
-    background: linear-gradient(135deg, #deb887, #d2b48c);
+    object-fit: cover;
     border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    color: #8B4513;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -264,7 +258,9 @@ body {
 .menu-hero {
     height: 40vh;
     min-height: 300px;
-    background: linear-gradient(135deg, rgba(245, 245, 220, 0.95) 0%, rgba(222, 184, 135, 0.95) 100%);
+    background: linear-gradient(135deg, rgba(21, 13, 8, 0.5) 0%, rgba(21, 13, 8, 0.5) 100%), url('image/nathan-dumlao-Y3AqmbmtLQI-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -322,12 +318,14 @@ body {
 .menu-item-image {
     width: 100%;
     height: 200px;
-    background: linear-gradient(135deg, #deb887, #d2b48c);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #8B4513;
-    font-size: 1.1rem;
+    overflow: hidden;
+}
+
+.menu-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .menu-item-content {
@@ -642,13 +640,14 @@ enu Section */
 .popular-item-image {
     width: 100%;
     height: 180px;
-    background: linear-gradient(135deg, #deb887, #d2b48c);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #8B4513;
-    font-size: 1.1rem;
-    font-weight: 500;
+    overflow: hidden;
+}
+
+.popular-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .popular-item-content {
